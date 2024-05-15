@@ -1,0 +1,13 @@
+GET /?format=api
+HTTP 200 OK
+Allow: GET, HEAD, OPTIONS
+Content-Type: application/json
+Vary: Accept
+
+{
+    "jobs": "http://127.0.0.1:8000/jobs/?format=api",
+    "applications": "http://127.0.0.1:8000/applications/?format=api",
+    "feedbacks": "http://127.0.0.1:8000/feedbacks/?format=api",
+    "selected_candidates": "http://127.0.0.1:8000/selected_candidates/?format=api",
+    "saved_jobs": "http://127.0.0.1:8000/saved_jobs/?format=api"
+}
